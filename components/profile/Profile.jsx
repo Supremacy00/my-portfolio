@@ -46,19 +46,19 @@ const Profile = () => {
             </div>
             <div className="flex justify-center items-center gap-3 flex-wrap mt-5">
               <Link
-                href="https://github.com/Supremacy00"
+                href="https://www.facebook.com/mukadas1?mibextid=2JQ9oc"
                 className="custom-cursor text-[20px] text-custom4 hover:bg-secondary hover:text-white dark:hover:text-secondary dark:hover:bg-custom5 p-2.5 bg-custom1 dark:bg-custom2 rounded-lg shadow-md transition-colors duration-300 ease-in-out cursor-pointer"
               >
                 <CgFacebook />
               </Link>
               <Link
-                href="https://github.com/Supremacy00"
+                href="https://www.instagram.com/iam_abdmuqaddas?igsh=OGQ5ZDc2ODk2ZA=="
                 className="custom-cursor text-[20px] text-custom6 hover:bg-secondary hover:text-white dark:hover:text-secondary dark:hover:bg-custom5 p-2.5 bg-custom1 dark:bg-custom2 rounded-lg shadow-md transition-colors duration-300 ease-in-out cursor-pointer"
               >
                 <IoLogoInstagram />
               </Link>
               <Link
-                href="https://github.com/Supremacy00"
+                href="www.linkedin.com/in/musa-abdulmuqaddas"
                 className="custom-cursor text-[16px] text-custom5 hover:bg-secondary hover:text-white dark:hover:text-secondary dark:hover:bg-custom5 p-3 bg-custom1 dark:bg-custom2 rounded-lg shadow-md transition-colors duration-300 ease-in-out cursor-pointer"
               >
                 <FaLinkedinIn />
