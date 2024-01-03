@@ -58,7 +58,7 @@ const Profile = () => {
                 <IoLogoInstagram />
               </Link>
               <Link
-                href="www.linkedin.com/in/musa-abdulmuqaddas"
+                href="https://www.linkedin.com/in/musa-abdulmuqaddas"
                 className="custom-cursor text-[16px] text-custom5 hover:bg-secondary hover:text-white dark:hover:text-secondary dark:hover:bg-custom5 p-3 bg-custom1 dark:bg-custom2 rounded-lg shadow-md transition-colors duration-300 ease-in-out cursor-pointer"
               >
                 <FaLinkedinIn />
