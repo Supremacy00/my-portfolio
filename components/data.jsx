@@ -109,12 +109,12 @@ export const blogData = [
 export const worksData = {
   innovations: [
     {
-      title: "Gallery App",
-      workPhoto: "/assets/images/draganddrop.jpg",
-      icon: <FaDiagramProject />,
-      category: "Innovations",
-      Link: "https://zuri-internship-task-three.vercel.app/",
-      id: "gallery-app-1",
+      title: "Chrome Extension",
+      workPhoto: "/assets/images/chromeextension.jpg",
+      icon: <MdWorkspacesFilled />,
+      category: "Panoramas",
+      Link: "https://zuri-internship-task-five.vercel.app/",
+      id: "chrome-extension-1",
     },
   ],
   panoramas: [
@@ -125,14 +125,6 @@ export const worksData = {
       category: "Panoramas",
       Link: "https://carrocars.vercel.app/",
       id: "carro-cars-1",
-    },
-    {
-      title: "Chrome Extension",
-      workPhoto: "/assets/images/chromeextension.jpg",
-      icon: <MdWorkspacesFilled />,
-      category: "Panoramas",
-      Link: "https://zuri-internship-task-five.vercel.app/",
-      id: "chrome-extension-2",
     },
   ],
   symphonies: [

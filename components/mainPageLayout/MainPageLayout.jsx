@@ -9,7 +9,7 @@ const MainPageLayout = () => {
       <section className="lg:block lg:flex-shrink justify-center items-center lg:h-[100dvh] lg:w-[38%]">
         <LeftSideBar />
       </section>
-      <section className="hidden lg:flex lg:flex-shrink justify-center items-center lg:h-[100dvh] lg:w-[55%]">
+      <section className="hidden lg:flex lg:flex-shrink lg:overflow-y-auto  justify-center items-center lg:h-[100dvh] lg:w-[55%]">
         <ContentLayout />
       </section>
       <section className="hidden lg:flex lg:flex-shrink-0 justify-center items-center lg:h-[100dvh] lg:w-[7%]">
