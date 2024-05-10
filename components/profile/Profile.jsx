@@ -81,7 +81,7 @@ const Profile = () => {
                   Phone
                 </h4>
                 <h2 className="text-light dark:text-white text-base">
-                  +2349160457070
+                  +2348166836197
                 </h2>
               </div>
             </div>
