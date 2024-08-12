@@ -7,8 +7,9 @@ const Works = () => {
     useMyComponentContext();
   return (
     <section className="font-IBM mx-auto max-w-[650px] mt-5 lg:mt-0 lg:max-w-full ">
+      <div className="max-w-full bg-white dark:bg-secondary rounded-[30px] overflow-y-hidden lg:h-[650px]">
       <div className="max-w-full bg-white dark:bg-secondary rounded-[30px] lg:h-[650px] lg:overflow-y-auto ">
-        <div className="hidden lg:block lg:sticky top-0 right-0 w-full bg-white dark:bg-secondary py-2" />
+        <div className="hidden lg:block lg:sticky top-0 right-0 w-full z-10 bg-white dark:bg-secondary py-2" />
         <div>
           <div>
             <span className="flex items-center gap-5 p-7">
@@ -69,6 +70,7 @@ const Works = () => {
           </div>
         </div>
         <div className="hidden lg:block lg:sticky bottom-0 right-0 w-full bg-white dark:bg-secondary py-2" />
+      </div>
       </div>
     </section>
   );

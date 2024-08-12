@@ -7,7 +7,6 @@ import { FaBriefcase, FaBloggerB } from "react-icons/fa6";
 import { LuSun } from "react-icons/lu";
 import { IoMoonOutline } from "react-icons/io5";
 import { FaUser, FaThList, FaPaperPlane } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
 import Link from "next/link";
 
 const RightSideBar = () => {
@@ -53,7 +52,7 @@ const RightSideBar = () => {
                 : "text-[22px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-9 text-[12px] uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-11 group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-9 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-11 group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             About
           </p>
         </Link>
@@ -69,7 +68,7 @@ const RightSideBar = () => {
                 : "text-[20px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-9 text-[12px] uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-[52px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-9 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-[52px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             Resume
           </p>
         </Link>
@@ -85,7 +84,7 @@ const RightSideBar = () => {
                 : "text-[20px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-9 text-[12px] uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-[46px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-9 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-[46px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             Works
           </p>
         </Link>
@@ -101,7 +100,7 @@ const RightSideBar = () => {
                 : "text-[22px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-7 text-[12px] uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-9 group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-7 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-9 group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             Blog
           </p>
         </Link>
@@ -117,7 +116,7 @@ const RightSideBar = () => {
                 : "text-[20px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-12 text-[12px] uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-[60px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-12 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-[60px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             Contact
           </p>
         </Link>

@@ -29,7 +29,7 @@ const Profile = () => {
             </div>
             <div className="absolute top-3 right-7 z-10 w-[79%] flex justify-center inset-1 h-[200px] mx-auto bg-custom5 bg-opacity-25 dark:bg-opacity-15 rounded-2xl xs:w-[250px] xs:h-[200px] lg:top-2 lg:right-5 lg:w-[150px] lg:h-[150px] lg:rounded-[40%]"></div>
             <div className="absolute top-3 right-7 z-30 w-[79%] flex justify-center inset-1 h-[200px] mx-auto bg-transparent rounded-2xl xs:w-[250px] xs:h-[200px] lg:w-[150px] lg:h-[150px] lg:rounded-[40%]">
-            <span className="absolute top-[65%] -right-[18px] flex h-3.5 w-3.5 lg:top-[60%] lg:-right-4">
+              <span className="absolute top-[65%] -right-[18px] flex h-3.5 w-3.5 lg:top-[60%] lg:-right-4">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-custom5 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-custom5"></span>
               </span>
@@ -47,24 +47,32 @@ const Profile = () => {
             <div className="flex justify-center items-center gap-3 flex-wrap mt-5">
               <Link
                 href="https://www.facebook.com/mukadas1?mibextid=2JQ9oc"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="custom-cursor text-[20px] text-custom4 hover:bg-secondary hover:text-white dark:hover:text-secondary dark:hover:bg-custom5 p-2.5 bg-custom1 dark:bg-custom2 rounded-lg shadow-md transition-colors duration-300 ease-in-out cursor-pointer"
               >
                 <CgFacebook />
               </Link>
               <Link
                 href="https://www.instagram.com/iam_abdmuqaddas?igsh=OGQ5ZDc2ODk2ZA=="
+                target="_blank"
+                rel="noopener noreferrer"
                 className="custom-cursor text-[20px] text-custom6 hover:bg-secondary hover:text-white dark:hover:text-secondary dark:hover:bg-custom5 p-2.5 bg-custom1 dark:bg-custom2 rounded-lg shadow-md transition-colors duration-300 ease-in-out cursor-pointer"
               >
                 <IoLogoInstagram />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/musa-abdulmuqaddas"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="custom-cursor text-[16px] text-custom5 hover:bg-secondary hover:text-white dark:hover:text-secondary dark:hover:bg-custom5 p-3 bg-custom1 dark:bg-custom2 rounded-lg shadow-md transition-colors duration-300 ease-in-out cursor-pointer"
               >
                 <FaLinkedinIn />
               </Link>
               <Link
                 href="https://github.com/Supremacy00"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="custom-cursor text-[20px] text-amber-800 hover:bg-secondary hover:text-white dark:hover:text-secondary dark:hover:bg-custom5 p-2.5 bg-custom1 dark:bg-custom2 rounded-lg shadow-md transition-colors duration-300 ease-in-out cursor-pointer"
               >
                 <FaGithubAlt />
