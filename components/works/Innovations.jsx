@@ -18,8 +18,12 @@ const Innovations = () => {
               transition={{ duration: 0.5 }}
             >
               <div className="group w-full border-[1px] border-gray-200 dark:border-custom2 rounded-2xl p-5">
-                <Link href={work.Link}>
-                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                <Link
+                  href={work.Link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="relative w-full aspect-200/120 rounded-lg overflow-hidden lg:h-[150px]">
                     <Image
                       src={work.workPhoto}
                       alt={work.title}
@@ -37,7 +41,11 @@ const Innovations = () => {
                 </Link>
                 <div className="text-center mt-5">
                   <span>
-                    <Link href={work.Link}>
+                    <Link
+                      href={work.Link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <h1 className="custom-cursor text-[18px] font-semibold text-light dark:text-dark inline-block group-hover:text-custom5 dark:group-hover:text-custom5 transition-colors duration-300 ease-in-out cursor-pointer">
                         {work.title}
                       </h1>

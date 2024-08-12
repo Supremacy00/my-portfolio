@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useMyComponentContext } from "@/context/ComponentContext";
 import { useContext } from "react";
 import { ThemeContext } from "@/context/theme-provider";
@@ -19,7 +19,7 @@ const NavMobile = () => {
     <nav className="fixed right-0 left-0 top-0 z-50 bg-white dark:bg-secondary shadow-md lg:hidden">
       <div>
         <div className="flex justify-between items-center px-7 py-3.5 mx-auto max-w-[650px] lg:px-5">
-          <h1 className="text-black dark:text-white font-medium">
+          <h1 className="text-black dark:text-white font-semibold">
             Musa Abdulmuqaddas
           </h1>
           <div className="flex items-center gap-5 flex-wrap">
