@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { IoLogoInstagram } from "react-icons/io";
@@ -13,6 +14,15 @@ import TypingAnimation from "../typingAnimation/TypingAnimation";
 import Link from "next/link";
 
 const Profile = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/assets/resume/my_resume.pdf";
+    link.download = "Musa_Abdulmuqaddas_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="mt-[158px] mb-5 font-work-sans mx-auto max-w-[650px] lg:max-w-full lg:m-0 lg:flex items-center justify-center lg:h-[100dvh]">
       <div className="flex justify-center items-center w-full">
@@ -137,7 +147,10 @@ const Profile = () => {
             </div>
           </div>
           <div className="flex justify-center items-center w-full text-white mt-6">
-            <button className="custom-cursor flex items-center gap-1 bg-custom5 border-[2px] border-custom5 px-5 py-4 rounded-lg hover:bg-secondary transition-colors duration-300 ease-in-out">
+            <button
+              onClick={handleDownload}
+              className="custom-cursor flex items-center gap-1 bg-custom5 border-[2px] border-custom5 px-5 py-4 rounded-lg hover:bg-secondary transition-colors duration-300 ease-in-out"
+            >
               <MdFileDownload className="text-[25px]" />
               <p className="text-[18px] font-semibold">Download CV</p>
             </button>
