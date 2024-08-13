@@ -22,7 +22,7 @@ const Blogs = () => {
               {blogData.map((blog) => (
                 <article key={blog.id}>
                   <div className="group w-full border-[1px] border-gray-200 dark:border-custom2 rounded-2xl p-5">
-                    <div className="w-full aspect-200/120 rounded-lg overflow-hidden lg:h-[180px]">
+                    <div className="w-full aspect-200/120 rounded-lg overflow-hidden bg-custom1 dark:bg-custom2  lg:h-[180px]">
                       <Image
                         src={blog.blogPhoto}
                         alt={blog.title}

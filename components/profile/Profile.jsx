@@ -85,10 +85,10 @@ const Profile = () => {
                 <MdPhoneIphone />
               </span>
               <div>
-                <h4 className=" text-light2 text-[13px] dark:text-dark2 mb-1">
+                <h4 className=" text-light2 text-[13px] dark:text-dark2 mb-1 no-underline">
                   Phone
                 </h4>
-                <h2 className="text-light dark:text-white text-base">
+                <h2 className="text-light dark:text-white text-base no-underline">
                   +2348166836197
                 </h2>
               </div>
