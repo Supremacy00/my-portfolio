@@ -16,7 +16,7 @@ import Link from "next/link";
 const Profile = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/assets/resume/my_resume.pdf";
+    link.href = "/assets/resume/musa_abdulmuqaddas_resume.pdf";
     link.download = "Musa_Abdulmuqaddas_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -25,8 +25,8 @@ const Profile = () => {
 
   return (
     <section className="mt-[158px] mb-5 font-work-sans mx-auto max-w-[650px] lg:max-w-full lg:m-0 lg:flex items-center justify-center lg:h-[100dvh]">
-      <div className="flex justify-center items-center w-full">
-        <div className="w-full bg-white dark:bg-secondary rounded-3xl py-12 px-4 lg:py-6">
+      <div className="flex items-center justify-center w-full">
+        <div className="w-full px-4 py-12 bg-white dark:bg-secondary rounded-3xl lg:py-6">
           <div className="relative">
             <div className="relative w-[79%] h-[200px] z-20 mx-auto bg-custom1 dark:bg-custom2 overflow-hidden rounded-2xl xs:w-[250px] xs:h-[200px] lg:w-[150px] lg:h-[150px] lg:rounded-[40%]">
               <Image
@@ -40,7 +40,7 @@ const Profile = () => {
             <div className="absolute top-3 right-7 z-10 w-[79%] flex justify-center inset-1 h-[200px] mx-auto bg-custom5 bg-opacity-25 dark:bg-opacity-15 rounded-2xl xs:w-[250px] xs:h-[200px] lg:top-2 lg:right-5 lg:w-[150px] lg:h-[150px] lg:rounded-[40%]"></div>
             <div className="absolute top-3 right-7 z-30 w-[79%] flex justify-center inset-1 h-[200px] mx-auto bg-transparent rounded-2xl xs:w-[250px] xs:h-[200px] lg:w-[150px] lg:h-[150px] lg:rounded-[40%]">
               <span className="absolute top-[65%] -right-[18px] flex h-3.5 w-3.5 lg:top-[60%] lg:-right-4">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-custom5 opacity-75"></span>
+                <span className="absolute inline-flex w-full h-full rounded-full opacity-75 animate-ping bg-custom5"></span>
                 <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-custom5"></span>
               </span>
             </div>
@@ -54,7 +54,7 @@ const Profile = () => {
                 <TypingAnimation />
               </div>
             </div>
-            <div className="flex justify-center items-center gap-3 flex-wrap mt-5">
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-5">
               <Link
                 href="https://www.facebook.com/mukadas1?mibextid=2JQ9oc"
                 target="_blank"
@@ -98,7 +98,7 @@ const Profile = () => {
                 <h4 className=" text-light2 text-[13px] dark:text-dark2 mb-1 no-underline">
                   Phone
                 </h4>
-                <h2 className="text-light dark:text-white text-base no-underline">
+                <h2 className="text-base no-underline text-light dark:text-white">
                   +2348166836197
                 </h2>
               </div>
@@ -112,7 +112,7 @@ const Profile = () => {
                 <h4 className=" text-light2 text-[13px] dark:text-dark2 mb-1">
                   Email
                 </h4>
-                <h2 className="text-light dark:text-white text-base">
+                <h2 className="text-base text-light dark:text-white">
                   musaabdulmuqaddas356@gmail.com
                 </h2>
               </div>
@@ -126,7 +126,7 @@ const Profile = () => {
                 <h4 className=" text-light2 text-[13px] dark:text-dark2 mb-1">
                   Location
                 </h4>
-                <h2 className="text-light dark:text-white text-base">
+                <h2 className="text-base text-light dark:text-white">
                   Abuja, Nigeria
                 </h2>
               </div>
@@ -140,13 +140,13 @@ const Profile = () => {
                 <h4 className=" text-light2 text-[13px] dark:text-dark2 mb-1">
                   Birthday
                 </h4>
-                <h2 className="text-light dark:text-white text-base">
+                <h2 className="text-base text-light dark:text-white">
                   6th August
                 </h2>
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center w-full text-white mt-6">
+          <div className="flex items-center justify-center w-full mt-6 text-white">
             <button
               onClick={handleDownload}
               className="custom-cursor flex items-center gap-1 bg-custom5 border-[2px] border-custom5 px-5 py-4 rounded-lg hover:bg-secondary transition-colors duration-300 ease-in-out"
