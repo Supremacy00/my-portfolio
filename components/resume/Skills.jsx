@@ -3,7 +3,6 @@ import { FaCode } from "react-icons/fa6";
 import { ImBooks } from "react-icons/im";
 import { HiCheck } from "react-icons/hi";
 
-
 const Skills = () => {
   return (
     <div>
@@ -13,7 +12,7 @@ const Skills = () => {
         </h1>
       </div>
       <div className="w-full h-[1px] bg-gray-200 dark:bg-custom2" />
-      <div className="py-3 px-7">
+      <div className="p-7">
         <div className="items-center justify-between gap-8 lg:flex xxl:gap-12">
           <div className="w-full lg:-mt-14">
             <div className="flex items-center gap-3 mb-6">
@@ -54,7 +53,7 @@ const Skills = () => {
                 <div className="absolute top-0 w-[92%] bg-custom6 py-[3px]"></div>
               </div>
             </div>
-            
+
             <div className="mt-7">
               <span className="flex items-center justify-between text-base font-medium text-light dark:text-dark">
                 <h3>HTML & CSS</h3>

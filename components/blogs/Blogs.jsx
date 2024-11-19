@@ -1,5 +1,5 @@
 import React from "react";
-import { blogData } from "../data";
+import { blogData } from "../../constant/data";
 import Image from "next/image";
 
 const Blogs = () => {

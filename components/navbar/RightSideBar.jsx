@@ -39,10 +39,10 @@ const RightSideBar = () => {
           )
         )}
       </div>
-      <div className="relative flex flex-col items-center px-2 py-3 mt-5 space-y-2 ">
+      <div className="relative flex flex-col items-center px-2 py-3 mt-5 space-y-2">
         <Link
-        href="/"
-          className="custom-cursor group flex items-center p-[19px] bg-white dark:bg-secondary rounded-xl cursor-pointer"
+          href="/"
+          className="group flex items-center p-[19px] bg-white custom-cursor dark:bg-secondary rounded-xl cursor-pointer"
           onClick={() => handleSetActive("About")}
         >
           <FaUser
@@ -52,12 +52,12 @@ const RightSideBar = () => {
                 : "text-[22px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-9 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-11 group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-9 text-xs text-white uppercase bg-custom5 px-2.5 py-0.5 rounded-full opacity-0 group-hover:visible  group-hover:-left-11 group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             About
           </p>
         </Link>
         <Link
-        href="#resume"
+          href="#resume"
           className="flex items-center p-5 bg-white cursor-pointer custom-cursor group dark:bg-secondary rounded-xl"
           onClick={() => handleSetActive("Resume")}
         >
@@ -68,12 +68,12 @@ const RightSideBar = () => {
                 : "text-[20px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-9 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-[52px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-9 text-xs text-white uppercase bg-custom5 px-2.5 py-0.5 rounded-full opacity-0 group-hover:visible  group-hover:-left-[52px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             Resume
           </p>
         </Link>
         <Link
-        href="#works"
+          href="#works"
           className="flex items-center p-5 bg-white cursor-pointer custom-cursor group dark:bg-secondary rounded-xl"
           onClick={() => handleSetActive("Works")}
         >
@@ -84,12 +84,12 @@ const RightSideBar = () => {
                 : "text-[20px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-9 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-[46px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-9 text-xs text-white uppercase bg-custom5 px-2.5 py-0.5 rounded-full opacity-0 group-hover:visible  group-hover:-left-[46px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             Works
           </p>
         </Link>
         <Link
-        href="#blog"
+          href="#blog"
           className="custom-cursor group flex items-center p-[19px] bg-white dark:bg-secondary rounded-xl  cursor-pointer"
           onClick={() => handleSetActive("Blog")}
         >
@@ -100,12 +100,12 @@ const RightSideBar = () => {
                 : "text-[22px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-7 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-9 group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-7 text-xs text-white uppercase bg-custom5 px-2.5 py-0.5 rounded-full opacity-0 group-hover:visible  group-hover:-left-9 group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             Blog
           </p>
         </Link>
         <Link
-        href="#contact"
+          href="#contact"
           className="flex items-center p-5 bg-white cursor-pointer custom-cursor group dark:bg-secondary rounded-xl"
           onClick={() => handleSetActive("Contact")}
         >
@@ -116,7 +116,7 @@ const RightSideBar = () => {
                 : "text-[20px] text-light dark:text-white"
             } group-hover:text-custom5 transition-colors duration-300 ease-in-out`}
           />
-          <p className="absolute -left-12 text-[12px] text-white uppercase bg-custom5 px-2.5 py-[1.5px] rounded-full opacity-0 group-hover:visible  group-hover:-left-[60px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
+          <p className="absolute -left-12 text-xs text-white uppercase bg-custom5 px-2.5 py-0.5 rounded-full opacity-0 group-hover:visible  group-hover:-left-[60px] group-hover:opacity-100 transition-all duration-300 ease-in-out ">
             Contact
           </p>
         </Link>

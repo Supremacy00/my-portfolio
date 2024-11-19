@@ -89,7 +89,7 @@ const Profile = () => {
               </Link>
             </div>
           </div>
-          <div className="max-w-[100%] px-3 bg-custom1 dark:bg-custom2 mt-8 py-8 overflow-x-auto rounded-xl truncate">
+          <div className="w-full px-3 py-8 mt-8 overflow-hidden bg-custom1 dark:bg-custom2 rounded-xl">
             <div className="flex items-center gap-2.5">
               <span className="text-[28px] text-custom6 bg-white p-2 rounded-lg shadow-md dark:bg-secondary">
                 <MdPhoneIphone />
@@ -104,15 +104,15 @@ const Profile = () => {
               </div>
             </div>
             <div className="w-full h-[1px] bg-gray-200 dark:bg-custom10 my-3" />
-            <div className="flex items-center gap-2.5">
+            <div className="min-w-full flex items-center gap-2.5">
               <span className="text-[28px] text-custom9 bg-white p-2 rounded-lg shadow-md dark:bg-secondary">
                 <MdMarkEmailUnread />
               </span>
-              <div>
+              <div className="flex-1 min-w-0">
                 <h4 className=" text-light2 text-[13px] dark:text-dark2 mb-1">
                   Email
                 </h4>
-                <h2 className="text-base text-light dark:text-white">
+                <h2 className="overflow-hidden text-base text-light dark:text-white text-ellipsis whitespace-nowrap">
                   musaabdulmuqaddas356@gmail.com
                 </h2>
               </div>

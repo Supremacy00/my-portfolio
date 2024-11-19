@@ -1,11 +1,11 @@
 import React from "react";
 import LeftSideBar from "../navbar/LeftSideBar";
-import ContentLayout from "../ContentLayout";
+import ContentLayout from "./ContentLayout";
 import RightSideBar from "../navbar/RightSideBar";
 
 const MainPageLayout = () => {
   return (
-    <main className="relative lg:flex lg:justify-between lg:item-center lg:gap-3 lg:mx-auto lg:max-w-[1300px] lg:px-5 ">
+    <main className="relative lg:flex lg:justify-between lg:item-center lg:gap-3 lg:mx-auto lg:max-w-[1300px] lg:px-5">
       <section className="lg:block lg:flex-shrink lg:justify-center lg:items-center lg:w-[38%]">
         <LeftSideBar />
       </section>

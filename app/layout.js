@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 import { MyContextProvider } from "@/context/ComponentContext";
 import NavMobile from "@/components/navbar/NavMobile";
 import { ThemeProvider } from "@/context/theme-provider";
