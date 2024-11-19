@@ -7,10 +7,10 @@ import CustomCursor from "@/components/CustomCursor";
 const MainPage = () => {
   return (
     <main>
+      <CustomCursor />
       <MainPageLayout />
       <MobileLayout />
       <BackgroundImage />
-      <CustomCursor />
     </main>
   );
 };

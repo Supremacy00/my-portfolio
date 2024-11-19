@@ -14,16 +14,16 @@ const RightSideBar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <section className="font-IBM mx-auto w-full transition-all duration-300 ease-in-out">
+    <section className="w-full mx-auto transition-all duration-300 ease-in-out font-IBM">
       <div className=" px-7 py-8 rounded-[30px] flex items-center flex-col space-y-8 bg-white dark:bg-secondary">
-        <div className="custom-cursor group cursor-pointer">
+        <div className="cursor-pointer custom-cursor group">
           <div className="w-5 h-[2px] bg-light dark:bg-white group-hover:w-7 group-hover:bg-custom5 transition-all duration-300 ease-in-out" />
           <div className="w-7 h-[2px] bg-light dark:bg-white mt-[5px] group-hover:w-7 group-hover:bg-custom5 transition-all duration-300 ease-in-out" />
           <div className="w-3 h-[2px] bg-light dark:bg-white mt-[5px] group-hover:w-7 group-hover:bg-custom5 transition-all duration-300 ease-in-out" />
         </div>
         {theme === "dark" ? (
           <div
-            className="dark:text-white dark:hover:text-custom5 cursor-pointer transition-colors duration-300 ease-in-out"
+            className="transition-colors duration-300 ease-in-out cursor-pointer custom-cursor dark:text-white dark:hover:text-custom5"
             onClick={toggleTheme}
           >
             <LuSun className="text-[23px]" />
@@ -31,7 +31,7 @@ const RightSideBar = () => {
         ) : (
           theme === "light" && (
             <div
-              className="text-light hover:text-custom5 cursor-pointer transition-colors duration-300 ease-in-out"
+              className="transition-colors duration-300 ease-in-out cursor-pointer custom-cursor text-light hover:text-custom5"
               onClick={toggleTheme}
             >
               <IoMoonOutline className="text-[25px]" />
@@ -39,7 +39,7 @@ const RightSideBar = () => {
           )
         )}
       </div>
-      <div className="relative px-2 py-3  mt-5 flex flex-col items-center space-y-2 ">
+      <div className="relative flex flex-col items-center px-2 py-3 mt-5 space-y-2 ">
         <Link
         href="/"
           className="custom-cursor group flex items-center p-[19px] bg-white dark:bg-secondary rounded-xl cursor-pointer"
@@ -58,7 +58,7 @@ const RightSideBar = () => {
         </Link>
         <Link
         href="#resume"
-          className="custom-cursor group flex items-center p-5 bg-white dark:bg-secondary rounded-xl  cursor-pointer"
+          className="flex items-center p-5 bg-white cursor-pointer custom-cursor group dark:bg-secondary rounded-xl"
           onClick={() => handleSetActive("Resume")}
         >
           <FaThList
@@ -74,7 +74,7 @@ const RightSideBar = () => {
         </Link>
         <Link
         href="#works"
-          className="custom-cursor group flex items-center p-5 bg-white dark:bg-secondary rounded-xl  cursor-pointer"
+          className="flex items-center p-5 bg-white cursor-pointer custom-cursor group dark:bg-secondary rounded-xl"
           onClick={() => handleSetActive("Works")}
         >
           <FaBriefcase
@@ -106,7 +106,7 @@ const RightSideBar = () => {
         </Link>
         <Link
         href="#contact"
-          className="custom-cursor group flex items-center p-5 bg-white dark:bg-secondary rounded-xl  cursor-pointer"
+          className="flex items-center p-5 bg-white cursor-pointer custom-cursor group dark:bg-secondary rounded-xl"
           onClick={() => handleSetActive("Contact")}
         >
           <FaPaperPlane

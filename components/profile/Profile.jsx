@@ -24,13 +24,13 @@ const Profile = () => {
   };
 
   return (
-    <section className="mt-[158px] mb-5 font-work-sans mx-auto max-w-[650px] lg:max-w-full lg:m-0 lg:flex items-center justify-center lg:h-[100dvh]">
+    <section className="mt-[158px] mb-5 font-work-sans mx-auto max-w-[650px] lg:min-h-screen lg:max-w-full lg:m-0 lg:flex items-center justify-center">
       <div className="flex items-center justify-center w-full">
         <div className="w-full px-4 py-12 bg-white dark:bg-secondary rounded-3xl lg:py-6">
           <div className="relative">
             <div className="relative w-[79%] h-[200px] z-20 mx-auto bg-custom1 dark:bg-custom2 overflow-hidden rounded-2xl xs:w-[250px] xs:h-[200px] lg:w-[150px] lg:h-[150px] lg:rounded-[40%]">
               <Image
-                src="/assets/images/profile-image.png"
+                src="/assets/images/profile-photo.jpg"
                 alt="Profile Image"
                 width={1000}
                 height={1000}

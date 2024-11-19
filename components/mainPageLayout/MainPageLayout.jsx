@@ -5,14 +5,14 @@ import RightSideBar from "../navbar/RightSideBar";
 
 const MainPageLayout = () => {
   return (
-    <main className="lg:flex gap-3 lg:fixed right-0 left-0 top-0 bottom-0 z-40 justify-between item-center lg:mx-auto lg:max-w-[1300px] lg:px-5 ">
-      <section className="lg:block lg:flex-shrink justify-center items-center lg:h-[100dvh] lg:w-[38%]">
+    <main className="relative lg:flex lg:justify-between lg:item-center lg:gap-3 lg:mx-auto lg:max-w-[1300px] lg:px-5 ">
+      <section className="lg:block lg:flex-shrink lg:justify-center lg:items-center lg:w-[38%]">
         <LeftSideBar />
       </section>
-      <section className="hidden lg:flex lg:flex-shrink lg:overflow-y-auto  justify-center items-center lg:h-[100dvh] lg:w-[55%]">
+      <section className="hidden lg:flex lg:flex-shrink lg:overflow-y-auto justify-center items-center lg:min-h-screen lg:w-[55%]">
         <ContentLayout />
       </section>
-      <section className="hidden lg:flex lg:flex-shrink-0 justify-center items-center lg:h-[100dvh] lg:w-[7%]">
+      <section className="hidden lg:flex lg:flex-shrink-0 justify-center items-center lg:min-h-screen lg:w-[7%]">
         <RightSideBar />
       </section>
     </main>
