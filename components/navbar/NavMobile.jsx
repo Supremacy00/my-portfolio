@@ -16,29 +16,29 @@ const NavMobile = () => {
     useMyComponentContext();
 
   return (
-    <nav className="fixed right-0 left-0 top-0 z-50 bg-white dark:bg-secondary shadow-md lg:hidden">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md dark:bg-secondary lg:hidden">
       <div>
-        <div className="flex justify-between items-center px-7 py-3.5 mx-auto max-w-[650px] lg:px-5">
-          <h1 className="text-black dark:text-white font-semibold">
+        <div className="flex justify-between items-center gap-2 px-7 py-3.5 mx-auto max-w-[650px] lg:px-5">
+          <h1 className="font-semibold text-black dark:text-white">
             Musa Abdulmuqaddas
           </h1>
-          <div className="flex items-center gap-5 flex-wrap">
+          <div className="flex items-center gap-5">
             {theme === "dark" ? (
               <div
-                className="dark:text-white dark:hover:text-custom5 cursor-pointer transition-colors duration-300 ease-in-out"
+                className="transition-colors duration-300 ease-in-out cursor-pointer dark:text-white dark:hover:text-custom5"
                 onClick={toggleTheme}
               >
                 <LuSun className="text-[23px]" />
               </div>
             ) : (
               <div
-                className="text-light hover:text-custom5 cursor-pointer transition-colors duration-300 ease-in-out"
+                className="transition-colors duration-300 ease-in-out cursor-pointer text-light hover:text-custom5"
                 onClick={toggleTheme}
               >
                 <IoMoonOutline className="text-[25px]" />
               </div>
             )}
-            <div className="group cursor-pointer p-3">
+            <div className="p-3 cursor-pointer group">
               <div className="w-5 h-[2px] bg-light dark:bg-white group-hover:w-7 group-hover:bg-custom5 transition-all duration-300 ease-in-out" />
               <div className="w-7 h-[2px] bg-light dark:bg-white mt-[5px] group-hover:w-7 group-hover:bg-custom5 transition-all duration-300 ease-in-out" />
               <div className="w-3 h-[2px] bg-light dark:bg-white mt-[5px] group-hover:w-7 group-hover:bg-custom5 transition-all duration-300 ease-in-out" />
@@ -49,7 +49,7 @@ const NavMobile = () => {
         <div className="relative px-4 py-6 grid grid-cols-5 place-items-center overflow-x-auto gap-12 mx-auto max-w-[600px] lg:px-0">
           <Link
             href="/"
-            className="group flex items-center dark:bg-secondary rounded-xl cursor-pointer"
+            className="flex items-center cursor-pointer group dark:bg-secondary rounded-xl"
             onClick={(e) => {
               e.preventDefault();
               handleSetActive("About");
@@ -67,7 +67,7 @@ const NavMobile = () => {
           </Link>
           <Link
             href="#resume"
-            className="group flex items-center dark:bg-secondary rounded-xl  cursor-pointer"
+            className="flex items-center cursor-pointer group dark:bg-secondary rounded-xl"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("resume-section");
@@ -85,7 +85,7 @@ const NavMobile = () => {
           </Link>
           <Link
             href="#works"
-            className="group flex items-center dark:bg-secondary rounded-xl cursor-pointer"
+            className="flex items-center cursor-pointer group dark:bg-secondary rounded-xl"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("works-section");
@@ -103,7 +103,7 @@ const NavMobile = () => {
           </Link>
           <Link
             href="#blog"
-            className="group flex items-center dark:bg-secondary rounded-xl cursor-pointer"
+            className="flex items-center cursor-pointer group dark:bg-secondary rounded-xl"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("blogs-section");
@@ -121,7 +121,7 @@ const NavMobile = () => {
           </Link>
           <Link
             href="#contact"
-            className="group flex items-center dark:bg-secondary rounded-xl  cursor-pointer"
+            className="flex items-center cursor-pointer group dark:bg-secondary rounded-xl"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("contact-section");

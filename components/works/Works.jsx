@@ -9,7 +9,7 @@ const Works = () => {
     <section className="font-IBM mx-auto max-w-[650px] mt-5 lg:mt-0 lg:max-w-full ">
       <div className="max-w-full bg-white dark:bg-secondary rounded-[30px] overflow-y-hidden lg:h-[650px]">
       <div className="max-w-full bg-white dark:bg-secondary rounded-[30px] lg:h-[650px] lg:overflow-y-auto ">
-        <div className="hidden lg:block lg:sticky top-0 right-0 w-full z-10 bg-white dark:bg-secondary py-2" />
+        <div className="top-0 right-0 z-10 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
         <div>
           <div>
             <span className="flex items-center gap-5 p-7">
@@ -21,8 +21,8 @@ const Works = () => {
             <div className="w-full h-[1px] bg-gray-200 dark:bg-custom2" />
           </div>
           <div>
-            <p className="text-base text-light2 dark:text-dark2 leading-7 py-5 px-7">{`Dive into my coding projects, where I've translated ideas into fully functional applications.`}</p>
-              <span className="flex justify-center items-center gap-5 flex-wrap text-base px-7 lg:justify-end">
+            <p className="py-5 text-base leading-7 text-light2 dark:text-dark2 px-7">{`Dive into my coding projects, where I've translated ideas into fully functional applications.`}</p>
+              <span className="flex flex-wrap items-center justify-center gap-5 text-base px-7 lg:justify-end">
                 <h3
                   className={`${
                     isComponentVisible === "All"
@@ -69,7 +69,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block lg:sticky bottom-0 right-0 w-full bg-white dark:bg-secondary py-2" />
+        <div className="bottom-0 right-0 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
       </div>
       </div>
     </section>

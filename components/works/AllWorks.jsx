@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { worksData } from "../data";
+import { worksData } from "../../constant/data";
 import Link from "next/link";
 
 const AllWorks = () => {
@@ -28,7 +28,7 @@ const AllWorks = () => {
   return (
     <section>
       <AnimatePresence>
-        <article className="grid grid-cols-1 gap-5 lg:grid-cols-2 px-7 pt-7 pb-12">
+        <article className="grid grid-cols-1 gap-5 pb-12 lg:grid-cols-2 px-7 pt-7">
           {sortedWorksAphabetically.map((work) => (
             <motion.article
               key={work.id}
@@ -50,9 +50,9 @@ const AllWorks = () => {
                       alt={work.title}
                       width={1000}
                       height={1000}
-                      className="w-full h-full object-cover group-hover:scale-110 group-hover:-rotate-1 transition-all duration-500 ease-in-out cursor-pointer"
+                      className="object-cover w-full h-full transition-all duration-500 ease-in-out cursor-pointer group-hover:scale-110 group-hover:-rotate-1"
                     />
-                    <div className="custom-cursor cursor-pointer">
+                    <div className="cursor-pointer custom-cursor">
                       <div className="absolute top-0 bg-gradient-to-r from-[#1C9CEA33] w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
                       <span className="text-[25px] text-dark absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out ">
                         {work.icon}
@@ -60,7 +60,7 @@ const AllWorks = () => {
                     </div>
                   </div>
                 </Link>
-                <div className="text-center mt-5">
+                <div className="mt-5 text-center">
                   <span>
                     <Link
                       href={work.Link}

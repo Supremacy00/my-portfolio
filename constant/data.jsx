@@ -25,9 +25,9 @@ export const aboutData = [
   },
   {
     icon: <FaRegLightbulb />,
-    title: "UI/UX Design",
+    title: "Mobile Development",
     description:
-      "UI/UX Designer, dedicated to crafting immersive digital experiences that resonate with users.",
+      "Mobile Developer, passionate about building seamless and innovative apps that enhance everyday experiences.",
     modification: "UD",
     id: 3,
   },
@@ -43,10 +43,33 @@ export const aboutData = [
 
 export const workingSkillsData = [
   {
-    year: "Sept-Oct",
+    year: "Sept 2022 - Oct 2022",
     title: "Frontend Developer",
-    location: "HNG Internship",
+    company: "HNG Internship",
+    logo: "/assets/logo/hng-logo.jpg",
     id: 1,
+  },
+  {
+    year: "Nov 2022 - Present",
+    title: "Frontend Developer",
+    company: "Shawsec",
+    logo: "/assets/logo/shawsec-logo.jpg",
+    id: 2,
+  },
+  {
+    year: "Jan 2024 - Oct 2024",
+    title: "Mobile Developer (contract)",
+    company: "Spouse Tech Limited ",
+    logo: "/assets/logo/spousetech-logo.jpg",
+    id: 3,
+  },
+
+  {
+    year: "Sept 2024 - Present",
+    title: "Frontend Developer",
+    company: "Xpresscore",
+    logo: "/assets/logo/xpress-logo.png",
+    id: 4,
   },
 ];
 
@@ -140,7 +163,7 @@ export const worksData = {
       icon: <FaDiagramProject />,
       category: "Panoramas",
       Link: "https://dishup-food.vercel.app/",
-      id: "dishup-food-1",
+      id: "dishup-food-2",
     },
   ],
   symphonies: [
