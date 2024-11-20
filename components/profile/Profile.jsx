@@ -30,11 +30,12 @@ const Profile = () => {
           <div className="relative">
             <div className="relative w-[79%] h-[200px] z-20 mx-auto bg-custom1 dark:bg-custom2 overflow-hidden rounded-2xl xs:w-[250px] xs:h-[200px] lg:w-[150px] lg:h-[150px] lg:rounded-[40%]">
               <Image
-                src="/assets/images/profile-photo.jpg"
+                src="/assets/images/my-portfolio-opengraph-photo.png"
                 alt="Profile Image"
                 width={1000}
                 height={1000}
                 priority
+                className="object-cover w-full h-full"
               />
             </div>
             <div className="absolute top-3 right-7 z-10 w-[79%] flex justify-center inset-1 h-[200px] mx-auto bg-custom5 bg-opacity-25 dark:bg-opacity-15 rounded-2xl xs:w-[250px] xs:h-[200px] lg:top-2 lg:right-5 lg:w-[150px] lg:h-[150px] lg:rounded-[40%]"></div>
