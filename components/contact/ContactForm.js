@@ -143,7 +143,7 @@ const ContactForm = () => {
         disabled={formik.isSubmitting}
         className="inline-block mb-1 text-base mt-7 custom-cursor group text-light dark:text-dark"
       >
-        <span className="flex items-center gap-2 group-hover:text-custom5">
+        <span className={`${formik.isSubmitting ? "group-hover:text-light group-hover:dark:text-dark" : "group-hover:text-custom5"} flex items-center gap-2 `}>
           <h3 className="text-[13px] font-semibold uppercase">Send Message</h3>
           {formik.isSubmitting ? (
             <ClipLoader

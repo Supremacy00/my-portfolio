@@ -26,7 +26,7 @@ const TypingAnimation = () => {
     };
   }, []);
 
-  return <p className="typing-animation"></p>;
+  return <span className="typing-animation text-custom5"></span>;
 };
 
 export default TypingAnimation;

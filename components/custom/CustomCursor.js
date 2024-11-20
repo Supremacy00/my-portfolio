@@ -1,19 +1,25 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const lerp = (start, end, t) => start * (1 - t) + end * t;
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [targetPosition, setTargetPosition] = useState({ x: 0, y: 0 });
   const [hoveredElement, setHoveredElement] = useState(null);
   const [isDesktop, setIsDesktop] = useState(true);
-  const targetPositionRef = useRef({ x: 0, y: 0 });
 
-  // Check device type
   useEffect(() => {
-    const checkDevice = () => setIsDesktop(window.innerWidth > 768);
+    const checkDevice = () => {
+      if (window.innerWidth <= 768) {
+        setIsDesktop(false);
+      } else {
+        setIsDesktop(true);
+      }
+    };
 
     checkDevice();
+
     window.addEventListener("resize", checkDevice);
 
     return () => {
@@ -21,12 +27,13 @@ const CustomCursor = () => {
     };
   }, []);
 
-  // Handle cursor animation
   useEffect(() => {
-    if (!isDesktop) return;
+    if (!isDesktop) return; // Skip cursor animation if not desktop
+
+    let cursorAnimationFrame;
 
     const updateCursorPosition = (e) => {
-      targetPositionRef.current = { x: e.clientX, y: e.clientY };
+      setTargetPosition({ x: e.clientX, y: e.clientY });
     };
 
     const handleElementHover = (e) => {
@@ -44,10 +51,11 @@ const CustomCursor = () => {
 
     const animateCursor = () => {
       setPosition((prevPosition) => ({
-        x: lerp(prevPosition.x, targetPositionRef.current.x, 0.05),
-        y: lerp(prevPosition.y, targetPositionRef.current.y, 0.05),
+        x: lerp(prevPosition.x, targetPosition.x, 0.04),
+        y: lerp(prevPosition.y, targetPosition.y, 0.04),
       }));
-      requestAnimationFrame(animateCursor);
+
+      cursorAnimationFrame = requestAnimationFrame(animateCursor);
     };
 
     animateCursor();
@@ -56,8 +64,9 @@ const CustomCursor = () => {
       document.removeEventListener("mousemove", updateCursorPosition);
       document.removeEventListener("mouseover", handleElementHover);
       document.removeEventListener("mouseout", handleElementUnhover);
+      cancelAnimationFrame(cursorAnimationFrame);
     };
-  }, [isDesktop]);
+  }, [isDesktop, targetPosition]);
 
   if (!isDesktop) return null;
 

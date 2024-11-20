@@ -43,33 +43,32 @@ export const aboutData = [
 
 export const workingSkillsData = [
   {
-    year: "Sept 2022 - Oct 2022",
+    year: "Sept 2024 - Present",
     title: "Frontend Developer",
-    company: "HNG Internship",
-    logo: "/assets/logo/hng-logo.jpg",
-    id: 1,
+    company: "Xpresscore",
+    logo: "/assets/logo/xpress-logo.png",
+    id: 4,
   },
   {
-    year: "Nov 2022 - Present",
+    year: "Jan 2024 - Jul 2024",
+    title: "Mobile Developer (contract)",
+    company: "Spouse Tech Limited ",
+    logo: "/assets/logo/spousetech-logo.jpg",
+    id: 3,
+  },
+  {
+    year: "Nov 2022 - Jul 2024",
     title: "Frontend Developer",
     company: "Shawsec",
     logo: "/assets/logo/shawsec-logo.jpg",
     id: 2,
   },
   {
-    year: "Jan 2024 - Oct 2024",
-    title: "Mobile Developer (contract)",
-    company: "Spouse Tech Limited ",
-    logo: "/assets/logo/spousetech-logo.jpg",
-    id: 3,
-  },
-
-  {
-    year: "Sept 2024 - Present",
+    year: "Sept 2022 - Oct 2022",
     title: "Frontend Developer",
-    company: "Xpresscore",
-    logo: "/assets/logo/xpress-logo.png",
-    id: 4,
+    company: "HNG Internship",
+    logo: "/assets/logo/hng-logo.jpg",
+    id: 1,
   },
 ];
 

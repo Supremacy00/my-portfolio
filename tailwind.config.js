@@ -44,10 +44,6 @@ module.exports = {
         "IBM" : ['IBM Plex Sans', 'sans-serif'],
         "lekton": ['Lekton', 'sans-serif'],
       },
-      backgroundImage: {
-        'light-background': "url('/assets/images/whitebg.jpg')",
-        'dark-background': "url('/assets/images/darkbg.jpg')",
-      },
       transitionProperty: {
         multiple: "width , height , backgroundColor , border-radius"
       },
