@@ -3,6 +3,8 @@ import "./globals.css";
 import { MyContextProvider } from "@/context/ComponentContext";
 import NavMobile from "@/components/navbar/NavMobile";
 import { ThemeProvider } from "@/context/theme-provider";
+import { Suspense } from "react";
+import PageLoader from "@/components/loader/PageLoader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +23,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://explore-my-portfolio.vercel.app/assets/images/profile-photo.jpg",
+        url: "https://explore-my-portfolio.vercel.app/assets/images/my-portfolio-opengraph-photo.png",
         width: 1200,
         height: 630,
         alt: "Portfolio OpenGraph Image",
@@ -35,7 +37,7 @@ export const metadata = {
       "Discover projects, skills, and insights from a dedicated frontend developer.",
     images: [
       {
-        url: "https://explore-my-portfolio.vercel.app/assets/images/profile-photo.jpg",
+        url: "https://explore-my-portfolio.vercel.app/assets/images/my-portfolio-opengraph-photo.png",
         width: 1200,
         height: 630,
         alt: "Portfolio Twitter Card Image",
@@ -47,7 +49,7 @@ export const metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "icon.ico",
   },
 };
 
@@ -66,7 +68,9 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <MyContextProvider>
             <NavMobile />
+            <Suspense fallback={<PageLoader />}>
             {children}
+            </Suspense>
           </MyContextProvider>
         </ThemeProvider>
       </body>
