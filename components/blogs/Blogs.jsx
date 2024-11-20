@@ -1,13 +1,13 @@
 import React from "react";
-import { blogData } from "../../constant/data";
 import Image from "next/image";
+import { blogData } from "@/constant/data";
 
 const Blogs = () => {
   return (
     <section className="font-IBM mx-auto max-w-[650px] mt-5 lg:mt-0  lg:max-w-full ">
       <div className="max-w-full bg-white dark:bg-secondary rounded-[30px] overflow-y-hidden lg:h-[650px]">
-        <div className="bg-white dark:bg-secondary rounded-[30px] lg:h-[650px] lg:overflow-y-auto ">
-          <div className="hidden lg:block lg:sticky top-0 right-0 w-full bg-white dark:bg-secondary py-2" />
+        <div className="bg-white dark:bg-secondary rounded-[30px] lg:h-[650px] lg:overflow-y-scroll scrollbar-custom">
+          <div className="top-0 right-0 z-10 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
           <div>
             <div>
               <span className="flex items-center gap-5 p-7">
@@ -18,7 +18,7 @@ const Blogs = () => {
               </span>
               <div className="w-full h-[1px] bg-gray-200 dark:bg-custom2" />
             </div>
-            <article className="grid grid-cols-1 gap-5 lg:grid-cols-2 px-7 pt-7 pb-12">
+            <article className="grid grid-cols-1 gap-5 pb-12 lg:grid-cols-2 px-7 pt-7">
               {blogData.map((blog) => (
                 <article key={blog.id}>
                   <div className="group w-full border-[1px] border-gray-200 dark:border-custom2 rounded-2xl p-5">
@@ -28,7 +28,7 @@ const Blogs = () => {
                         alt={blog.title}
                         width={1000}
                         height={1000}
-                        className="custom-cursor w-full h-full object-cover group-hover:scale-110 group-hover:-rotate-2 transition-all duration-500 ease-in-out cursor-pointer"
+                        className="object-cover w-full h-full transition-all duration-500 ease-in-out cursor-pointer custom-cursor group-hover:scale-110 group-hover:-rotate-2 transform-gpu group-hover:relative"
                       />
                     </div>
                     <div className="mt-5 lg:text-center">
@@ -50,7 +50,7 @@ const Blogs = () => {
               ))}
             </article>
           </div>
-          <div className="hidden lg:block lg:sticky bottom-0 right-0 w-full bg-white dark:bg-secondary py-2" />
+          <div className="bottom-0 right-0 z-10 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
         </div>
       </div>
     </section>

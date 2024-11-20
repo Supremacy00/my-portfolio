@@ -11,7 +11,7 @@ const CustomCursor = () => {
 
   useEffect(() => {
     const checkDevice = () => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 974) {
         setIsDesktop(false);
       } else {
         setIsDesktop(true);
@@ -51,8 +51,8 @@ const CustomCursor = () => {
 
     const animateCursor = () => {
       setPosition((prevPosition) => ({
-        x: lerp(prevPosition.x, targetPosition.x, 0.18),
-        y: lerp(prevPosition.y, targetPosition.y, 0.18),
+        x: lerp(prevPosition.x, targetPosition.x, 0.05),
+        y: lerp(prevPosition.y, targetPosition.y, 0.05),
       }));
 
       cursorAnimationFrame = requestAnimationFrame(animateCursor);

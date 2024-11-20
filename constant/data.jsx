@@ -111,7 +111,7 @@ export const blogData = [
   {
     blogPhoto: "/assets/blog/music.jpg",
     date: "19th Century",
-    title: "The Rhythmic Tapestry of Jazz",
+    title: "The Rhythmic Tapestry of Jazz Genre",
     category: "Music",
     description:
       "Jazz, a genre born out of the African-American experience, is a celebration of freedom and improvisation. With its syncopated rhythms and soulful melodies, jazz has the power to transport listeners to smoky lounges of the past and avant-garde spaces of the future.",

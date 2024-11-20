@@ -8,7 +8,7 @@ const Works = () => {
   return (
     <section className="font-IBM mx-auto max-w-[650px] mt-5 lg:mt-0 lg:max-w-full ">
       <div className="max-w-full bg-white dark:bg-secondary rounded-[30px] overflow-y-hidden lg:h-[650px]">
-      <div className="max-w-full bg-white dark:bg-secondary rounded-[30px] lg:h-[650px] lg:overflow-y-auto ">
+      <div className="max-w-full bg-white dark:bg-secondary rounded-[30px] lg:h-[650px] lg:overflow-y-scroll scrollbar-custom ">
         <div className="top-0 right-0 z-10 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
         <div>
           <div>
@@ -69,7 +69,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <div className="bottom-0 right-0 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
+        <div className="bottom-0 right-0 z-10 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
       </div>
       </div>
     </section>

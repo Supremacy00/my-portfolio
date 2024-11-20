@@ -1,20 +1,20 @@
+import { useEffect } from "react";
 
-import { useEffect } from 'react';
-
-const useCloseOnOutsideClick = (isActive, closeCallback, ...refs) => {
+const useCloseOnOutsideClick = (isActive, closeHandler, ...refs) => {
   useEffect(() => {
-    const handleDocumentClick = (e) => {
-      if (isActive && refs.every((ref) => ref.current && !ref.current.contains(e.target))) {
-        closeCallback();
+    if (!isActive) return;
+
+    const handleClickOutside = (event) => {
+      if (
+        refs.every((ref) => ref.current && !ref.current.contains(event.target))
+      ) {
+        closeHandler();
       }
     };
 
-    document.addEventListener('click', handleDocumentClick);
-
-    return () => {
-      document.removeEventListener('click', handleDocumentClick);
-    };
-  }, [isActive, closeCallback, refs]);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isActive, closeHandler, refs]);
 };
 
 export default useCloseOnOutsideClick;
