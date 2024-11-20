@@ -30,7 +30,7 @@ const Profile = () => {
           <div className="relative">
             <div className="relative w-[79%] h-[200px] z-20 mx-auto bg-custom1 dark:bg-custom2 overflow-hidden rounded-2xl xs:w-[250px] xs:h-[200px] lg:w-[150px] lg:h-[150px] lg:rounded-[40%]">
               <Image
-                src="/assets/images/my-portfolio-opengraph-photo.png"
+                src="/assets/images/profile-photo.png"
                 alt="Profile Image"
                 width={1000}
                 height={1000}
