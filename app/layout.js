@@ -6,18 +6,57 @@ import { ThemeProvider } from "@/context/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  metadataBase: new URL("https://explore-my-portfolio.vercel.app/"),
+  title: "Explore My Portfolio - Frontend Developer & Creator",
+  description:
+    "Showcasing the projects, skills, and expertise of a passionate frontend developer. Discover a world of seamless designs, intuitive user interfaces, and innovative solutions.",
+  openGraph: {
+    title: "Explore My Portfolio",
+    description:
+      "Dive into the journey of a frontend developer. Explore dynamic projects, innovative solutions, and a commitment to crafting exceptional digital experiences.",
+    url: "https://explore-my-portfolio.vercel.app/",
+    type: "website",
+    siteName: "Explore My Portfolio",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://explore-my-portfolio.vercel.app/assets/images/profile-photo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio OpenGraph Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Explore My Portfolio",
+    description:
+      "Discover projects, skills, and insights from a dedicated frontend developer.",
+    images: [
+      {
+        url: "https://explore-my-portfolio.vercel.app/assets/images/profile-photo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio Twitter Card Image",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 export const viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false,
-};
-
-export const metadata = {
-  name: "format-detection",
-  content: "telephone=no",
-  title: "My Portfolio",
-  description: "A frontend developer portfolio",
+  minimumScale: 1,
+  userScalable: "no",
 };
 
 export default function RootLayout({ children }) {

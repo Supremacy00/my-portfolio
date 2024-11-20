@@ -24,7 +24,7 @@ const Contact = () => {
           </div>
           <div className="bottom-0 right-0 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
         </div>
-        <Toaster position="top-center" />
+        <Toaster position="top-center" richColors/>
       </div>
     </section>
   );

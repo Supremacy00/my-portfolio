@@ -19,7 +19,7 @@ const NavMobile = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md dark:bg-secondary lg:hidden">
       <div>
         <div className="flex justify-between items-center gap-2 px-7 py-3.5 mx-auto max-w-[650px] lg:px-5">
-          <h1 className="font-semibold text-black dark:text-white">
+          <h1 className="text-sm font-semibold text-light dark:text-white">
             Musa Abdulmuqaddas
           </h1>
           <div className="flex items-center gap-5">

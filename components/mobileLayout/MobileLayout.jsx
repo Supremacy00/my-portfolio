@@ -9,7 +9,7 @@ import Works from "@/components/works/Works";
 
 const MobileLayout = () => {
   return (
-    <div className="lg:hidden">
+    <div className="relative z-40 lg:hidden">
     <Element id="about-section">
       <About />
     </Element>
