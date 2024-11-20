@@ -51,8 +51,8 @@ const CustomCursor = () => {
 
     const animateCursor = () => {
       setPosition((prevPosition) => ({
-        x: lerp(prevPosition.x, targetPosition.x, 0.04),
-        y: lerp(prevPosition.y, targetPosition.y, 0.04),
+        x: lerp(prevPosition.x, targetPosition.x, 0.18),
+        y: lerp(prevPosition.y, targetPosition.y, 0.18),
       }));
 
       cursorAnimationFrame = requestAnimationFrame(animateCursor);
