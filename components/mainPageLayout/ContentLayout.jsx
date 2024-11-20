@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { useMyComponentContext } from "@/context/ComponentContext";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,17 +9,16 @@ import Blogs from "../blogs/Blogs";
 import Contact from "../contact/Contact";
 
 const ContentLayout = () => {
-  const { activeSection } = useMyComponentContext()
-    useMyComponentContext();
-    
+  const { activeSection } = useMyComponentContext();
+
   const variants = {
-    initial: { opacity: 0, y: '100%' },
+    initial: { opacity: 0, y: "100%" },
     animate: { opacity: 1, y: 0, transition: { duration: 0.9 } },
-    exit: { opacity: 0, y: '-100%', transition: { duration: 0.9 } },
+    exit: { opacity: 0, y: "-100%", transition: { duration: 0.9 } },
   };
 
   return (
-    <div>
+    <div className="relative">
       <AnimatePresence initial={false} mode="popLayout">
         {activeSection === "About" && (
           <motion.div

@@ -22,6 +22,7 @@ const inputFields = [
 
 const ContactForm = () => {
   const [activeField, setActiveField] = useState(null);
+  const [formStatus, setFormStatus] = useState(null); 
   const refs = {
     name: useRef(),
     email: useRef(),
@@ -31,12 +32,16 @@ const ContactForm = () => {
   useCloseOnOutsideClick(
     activeField !== null,
     () => setActiveField(null),
-    ...Object.values(refs)
+    Object.values(refs)
   );
+  
 
   const handleInputClick = (field) => {
-    setActiveField(field);
+    if (activeField !== field) {
+      setActiveField(field);
+    }
   };
+  
   // Validation schema with Yup
   const validationSchema = Yup.object({
     name: Yup.string()
