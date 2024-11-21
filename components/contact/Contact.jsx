@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
 import ContactForm from "./ContactForm";
-import { Toaster } from "sonner";
 
 const Contact = () => {
   return (
-    <section className="font-IBM mx-auto max-w-[650px] my-5 lg:mt-0 lg:max-w-full">
-      <div className="max-w-full bg-white dark:bg-secondary rounded-[30px] overflow-y-hidden lg:h-[650px]">
+    <section className="relative font-IBM mx-auto max-w-[650px] mt-5 mb-10 lg:mt-0 lg:mb-0 lg:max-w-full">
+      <div className="relative max-w-full bg-white dark:bg-secondary rounded-[30px] overflow-y-hidden lg:h-[650px]">
         <div className="bg-white dark:bg-secondary rounded-[30px] lg:h-[650px] lg:overflow-y-scroll scrollbar-custom">
           <div className="top-0 right-0 z-10 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
           <div>
@@ -24,7 +23,6 @@ const Contact = () => {
           </div>
           <div className="bottom-0 right-0 z-10 hidden w-full py-2 bg-white lg:block lg:sticky dark:bg-secondary" />
         </div>
-        <Toaster position="top-center" richColors className="absolute" />
       </div>
     </section>
   );

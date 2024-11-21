@@ -146,7 +146,7 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={formik.isSubmitting}
-        className="inline-block mb-1 text-base mt-7 custom-cursor group text-light dark:text-dark"
+        className="inline-block mb-5 text-base lg:mb-1 mt-7 custom-cursor group text-light dark:text-dark"
       >
         <span className={`${formik.isSubmitting ? "group-hover:text-light group-hover:dark:text-dark" : "group-hover:text-custom5"} flex items-center gap-2 `}>
           <h3 className="text-[13px] font-semibold uppercase">Send Message</h3>

@@ -5,6 +5,7 @@ import NavMobile from "@/components/navbar/NavMobile";
 import { ThemeProvider } from "@/context/theme-provider";
 import { Suspense } from "react";
 import PageLoader from "@/components/loader/PageLoader";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,9 +66,14 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <MyContextProvider>
             <NavMobile />
-            <Suspense fallback={<PageLoader />}>
-            {children}
-            </Suspense>
+            <Suspense fallback={<PageLoader />}>{children}</Suspense>
+            <Toaster
+              position="bottom-center"
+              richColors
+              containerStyle={{
+                zIndex: 9999,
+              }}
+            />
           </MyContextProvider>
         </ThemeProvider>
       </body>
