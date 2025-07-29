@@ -12,8 +12,8 @@ const Education = () => {
         </h1>
       </div>
       <article className="grid grid-cols-1 gap-5 mt-5">
-        {educationData.map((item) => (
-          <article key={item.id} className="w-full">
+        {educationData.map((item, index) => (
+          <article key={index} className="w-full">
             <div className="w-full p-5 border-[1px] border-gray-200 dark:border-custom2 rounded-2xl ">
               <h3 className="text-[14px] font-medium text-light2 dark:text-dark2 mb-2.5">
                 {item.year}

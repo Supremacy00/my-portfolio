@@ -25,7 +25,7 @@ const Code = () => {
       <div className="mt-7">
         <span className="flex items-center justify-between text-base font-medium text-light dark:text-dark">
           <h3>Mobile App</h3>
-          <p>85%</p>
+          <p>90%</p>
         </span>
         <div className="relative w-full mt-3">
           <div className="relative w-full bg-custom11 dark:bg-custom12 py-[3px]"></div>
@@ -65,7 +65,7 @@ const Code = () => {
       <div className="mt-7">
         <span className="flex items-center justify-between text-base font-medium text-light dark:text-dark">
           <h3>JavaScript</h3>
-          <p>75%</p>
+          <p>90%</p>
         </span>
         <div className="relative w-full mt-3">
           <div className="relative w-full bg-custom11 dark:bg-custom12 py-[3px]"></div>
