@@ -4,7 +4,6 @@ import { BiSolidCustomize } from "react-icons/bi";
 import { SiAdobephotoshop } from "react-icons/si";
 import { FaDiagramProject } from "react-icons/fa6";
 import { MdWorkspacesFilled } from "react-icons/md";
-import { FaLink } from "react-icons/fa";
 
 export const aboutData = [
   {
@@ -43,32 +42,46 @@ export const aboutData = [
 
 export const workingSkillsData = [
   {
-    year: "Sept 2024 - Present",
+    year: "Nov 2024 - Present",
+    title: "Frontend Developer",
+    company: "Edstream",
+    logo: "/assets/logo/edstream-logo.jpeg",
+  },
+  {
+    year: "Nov 2024 - Present",
+    title: "Frontend & Mobile Developer (contract)",
+    company: "Doos Corp",
+    logo: "/assets/logo/doos-logo.jpg",
+  },
+  {
+    year: "Jul 2024 - Nov 2024",
     title: "Frontend Developer",
     company: "Xpresscore",
     logo: "/assets/logo/xpress-logo.png",
-    id: 4,
   },
   {
-    year: "Jan 2024 - Jul 2024",
-    title: "Mobile Developer (contract)",
-    company: "Spouse Tech Limited ",
-    logo: "/assets/logo/spousetech-logo.jpg",
-    id: 3,
-  },
-  {
-    year: "Nov 2022 - Jul 2024",
+    year: "Nov 2023 - Jul 2024",
     title: "Frontend Developer",
     company: "Shawsec",
     logo: "/assets/logo/shawsec-logo.jpg",
-    id: 2,
   },
   {
-    year: "Sept 2022 - Oct 2022",
+    year: "Sept 2023 - Mar 2024",
+    title: "Mobile App Developer (contract)",
+    company: "Spouse Tech Limited ",
+    logo: "/assets/logo/spousetech-logo.jpg",
+  },
+  {
+    year: "Jul 2020 - Feb 2023",
+    title: "Frontend Developer",
+    company: "Rumbu",
+    logo: null,
+  },
+  {
+    year: "May 2018 - Aug 2018",
     title: "Frontend Developer",
     company: "HNG Internship",
     logo: "/assets/logo/hng-logo.jpg",
-    id: 1,
   },
 ];
 
@@ -78,14 +91,12 @@ export const educationData = [
     title: "Bsc in Computer Science",
     title2: "- University,",
     location: "Zaria City, KD",
-    id: 1,
   },
   {
     year: "2017-2019",
     title: "Diploma in Computer Science",
     title2: "- University,",
     location: "Zaria City, KD",
-    id: 2,
   },
 ];
 
@@ -165,14 +176,5 @@ export const worksData = {
       id: "dishup-food-2",
     },
   ],
-  symphonies: [
-    {
-      title: "Simple Movie App",
-      workPhoto: "/assets/images/movieapp.jpg",
-      icon: <FaLink />,
-      category: "Symphonies",
-      Link: "https://zuri-internship-task-two.vercel.app/",
-      id: "simple-movie-app-1",
-    },
-  ],
+  symphonies: [],
 };

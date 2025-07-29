@@ -16,7 +16,7 @@ import Link from "next/link";
 const Profile = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/assets/resume/musa_abdulmuqaddas_resume.pdf";
+    link.href = "/assets/resume/Musa_Abdulmuqaddas_Resume.pdf";
     link.download = "Musa_Abdulmuqaddas_Resume.pdf";
     document.body.appendChild(link);
     link.click();
